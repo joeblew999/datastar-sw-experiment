@@ -4,9 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "test": "node test-sync.mjs"
   },
   "devDependencies": {
-    "wrangler": "^3.90.0"
+    "miniflare": "^4.20260415.0",
+    "wrangler": "^3.90.0",
+    "ws": "^8.20.0"
   }
 }
