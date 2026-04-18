@@ -1,0 +1,14 @@
+name = "datastar-sw-sync"
+main = "src/index.js"
+compatibility_date = "2025-04-01"
+
+[[durable_objects.bindings]]
+name = "BOARD_ROOMS"
+class_name = "BoardRoom"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["BoardRoom"]
+
+[observability]
+enabled = true
